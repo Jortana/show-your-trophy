@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { getAssetsFile } from '@/utils/pub-use'
+</script>
 
 <template>
   <div class="header">
-    <el-avatar src="/src/assets/999.png" />
+    <el-avatar :src="getAssetsFile('999.png')" />
     <div class="title">Show Your Trophy</div>
     <!-- <el-button type="primary">登录</el-button> -->
   </div>

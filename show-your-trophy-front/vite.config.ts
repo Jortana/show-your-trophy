@@ -53,7 +53,7 @@ export default defineConfig({
     cors: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:9003', //代理的地址
+        target: 'http://localhost:9005', //代理的地址
         changeOrigin: true,
         withCredentials: true,
         rewrite: (path) => path.replace(/^\/api/, '/api')

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { getAssetsFile } from '@/utils/pub-use'
+
 const props = defineProps(['profile', 'summary'])
 
 const totalTrophy = Object.values(props.summary.earnedTrophies).reduce(
@@ -70,25 +72,37 @@ interface avatar {
       </div>
       <div class="trophy-container">
         <div class="trophy">
-          <el-image class="trophy-img" src="src/assets/platinum.png"></el-image>
+          <el-image
+            class="trophy-img"
+            :src="getAssetsFile('platinum.png')"
+          ></el-image>
           <div class="gray-text">
             {{ props.summary.earnedTrophies.platinum }}
           </div>
         </div>
         <div class="trophy">
-          <el-image class="trophy-img" src="src/assets/gold.png"></el-image>
+          <el-image
+            class="trophy-img"
+            :src="getAssetsFile('gold.png')"
+          ></el-image>
           <div class="gray-text">
             {{ props.summary.earnedTrophies.gold }}
           </div>
         </div>
         <div class="trophy">
-          <el-image class="trophy-img" src="src/assets/silver.png"></el-image>
+          <el-image
+            class="trophy-img"
+            :src="getAssetsFile('silver.png')"
+          ></el-image>
           <div class="gray-text">
             {{ props.summary.earnedTrophies.silver }}
           </div>
         </div>
         <div class="trophy">
-          <el-image class="trophy-img" src="src/assets/bronze.png"></el-image>
+          <el-image
+            class="trophy-img"
+            :src="getAssetsFile('bronze.png')"
+          ></el-image>
           <div class="gray-text">
             {{ props.summary.earnedTrophies.bronze }}
           </div>

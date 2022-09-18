@@ -16,7 +16,9 @@ interface Result {
 interface ResultData<T = any> extends Result {
   data?: T
 }
-const URL: string = import.meta.env.PROD ? '' : 'http://localhost:9003'
+const URL: string = import.meta.env.PROD
+  ? 'https://jortana.fun:9005'
+  : 'http://localhost:9005'
 
 enum RequestEnums {
   TIMEOUT = 20000,

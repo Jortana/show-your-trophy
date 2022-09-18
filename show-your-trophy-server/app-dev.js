@@ -23,7 +23,7 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-const PORT = process.env.PORT || 9003
+const PORT = process.env.PORT || 9005
 
 // 挂载路由
 app.use('/api', router)

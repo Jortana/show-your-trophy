@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { getAssetsFile } from '@/utils/pub-use'
+
 const props = defineProps([
   'trophyTitles',
   'totalItemCount',
@@ -84,26 +86,35 @@ watch(visibleType, async (newVisibleType) => {
           <div class="trophy">
             <el-image
               class="trophy-img"
-              src="src/assets/platinum.png"
+              :src="getAssetsFile('platinum.png')"
             ></el-image>
             <div class="gray-text">
               {{ trophy.earnedTrophies.platinum }}
             </div>
           </div>
           <div class="trophy">
-            <el-image class="trophy-img" src="src/assets/gold.png"></el-image>
+            <el-image
+              class="trophy-img"
+              :src="getAssetsFile('gold.png')"
+            ></el-image>
             <div class="gray-text">
               {{ trophy.earnedTrophies.gold }}
             </div>
           </div>
           <div class="trophy">
-            <el-image class="trophy-img" src="src/assets/silver.png"></el-image>
+            <el-image
+              class="trophy-img"
+              :src="getAssetsFile('silver.png')"
+            ></el-image>
             <div class="gray-text">
               {{ trophy.earnedTrophies.silver }}
             </div>
           </div>
           <div class="trophy">
-            <el-image class="trophy-img" src="src/assets/bronze.png"></el-image>
+            <el-image
+              class="trophy-img"
+              :src="getAssetsFile('bronze.png')"
+            ></el-image>
             <div class="gray-text">
               {{ trophy.earnedTrophies.bronze }}
             </div>

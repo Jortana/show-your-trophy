@@ -16,7 +16,13 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 // 为客户端提供跨域资源请求
-app.use(cors())
+const corsOptions = {
+  origin: ['https://trophy.jortana.fun'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization']
+}
+app.use(cors(corsOptions))
 
 const PORT = process.env.PORT || 9005
 
