@@ -74,7 +74,7 @@ watch(visibleType, async (newVisibleType) => {
       <div class="img-container">
         <el-image
           class="game-icon"
-          :src="`/api/image/${
+          :src="`https://jortana.fun:9005/api/image/${
             trophy.npServiceName === 'trophy2' ? 'ps5' : 'ps4'
           }?url=${trophy.trophyTitleIconUrl}`"
           crossorigin="anonymous"

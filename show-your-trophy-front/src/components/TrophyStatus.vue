@@ -49,8 +49,8 @@ async function savePoster() {
     logging: true,
     width: width,
     height: height,
-    backgroundColor: '#141414'
-    // useCORS: true
+    backgroundColor: '#141414',
+    useCORS: true
   }
   const downloadName = props.profile.onlineId
   html2canvas(shareContent, opts).then((canvas) => {

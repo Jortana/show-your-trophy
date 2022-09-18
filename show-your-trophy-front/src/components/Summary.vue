@@ -46,7 +46,7 @@ interface avatar {
       <el-avatar
         :size="40"
         class="avatar"
-        :src="`/api/image?url=${props.profile.avatars.filter((avatar: avatar) => avatar.size === 'l')[0].url}`"
+        :src="`https://jortana.fun:9005/api/image?url=${props.profile.avatars.filter((avatar: avatar) => avatar.size === 'l')[0].url}`"
         crossorigin="anonymous"
       />
       <div>
