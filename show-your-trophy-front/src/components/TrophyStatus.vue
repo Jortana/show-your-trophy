@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import html2canvas from 'html2canvas'
-
+// @ts-ignore
 import Canvas2Image from '@/utils/canvas2Image.js'
 
 import Summary from '@/components/Summary.vue'
@@ -12,7 +12,7 @@ const props = defineProps([
   'trophyTitles',
   'totalItemCount'
 ])
-console.log(props)
+// console.log(props)
 
 const savePosterLoading = ref(false)
 const screenViewBox: any = ref<InstanceType<typeof HTMLDivElement>>()

@@ -29,7 +29,6 @@ async function getData() {
     const summaryRes = await getSelfSummary({
       npsso: npsso.value
     })
-    console.log(summaryRes)
     summaryData.profile = summaryRes.data?.profile
     summaryData.summary = summaryRes.data?.summary
 

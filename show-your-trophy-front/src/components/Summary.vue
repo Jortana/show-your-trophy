@@ -36,7 +36,6 @@ interface avatar {
   size: string
   url: string
 }
-console.log(props)
 </script>
 
 <template>

@@ -37,16 +37,6 @@ watch(visibleType, async (newVisibleType) => {
       break
   }
 })
-
-// 侦听 savePosterLoading 的变化控制 dom 的显示和隐藏
-watch(
-  () => props.savePosterLoading,
-  async (newSavePosterLoading) => {
-    console.log(newSavePosterLoading)
-  }
-)
-
-console.log(trophyTitles.trophyTitles)
 </script>
 
 <template>

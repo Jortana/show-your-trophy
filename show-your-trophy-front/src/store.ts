@@ -17,10 +17,6 @@ export const useStore = defineStore('main', {
     initApp() {
       this.isInitialized = true
       console.log('app initialized!')
-    },
-
-    increment(value = 1) {
-      this.count += value
     }
   },
 

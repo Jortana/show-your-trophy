@@ -10,7 +10,6 @@ declare module '@vue/runtime-core' {
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElImage: typeof import('element-plus/es')['ElImage']
@@ -21,15 +20,11 @@ declare module '@vue/runtime-core' {
     ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     GlobalHeader: typeof import('./src/components/GlobalHeader.vue')['default']
-    IEpEdit: typeof import('~icons/ep/edit')['default']
-    IEpPictrue: typeof import('~icons/ep/pictrue')['default']
-    IEpPicture: typeof import('~icons/ep/picture')['default']
     IEpShare: typeof import('~icons/ep/share')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Summary: typeof import('./src/components/Summary.vue')['default']
     Trophy: typeof import('./src/components/Trophy.vue')['default']
-    TrophyList: typeof import('./src/components/TrophyList.vue')['default']
     TrophyStatus: typeof import('./src/components/TrophyStatus.vue')['default']
   }
   export interface ComponentCustomProperties {
