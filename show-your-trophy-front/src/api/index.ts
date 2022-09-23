@@ -5,6 +5,8 @@ import axios, {
   AxiosResponse
 } from 'axios'
 import { ElMessage } from 'element-plus'
+import 'element-plus/theme-chalk/el-message.css'
+
 // 数据返回的接口
 // 定义请求响应参数，不含data
 interface Result {
@@ -94,9 +96,10 @@ class RequestHttp {
   handleCode(code: number): void {
     switch (code) {
       case 401:
-        ElMessage.error('登录失败，请重新登录')
+        ElMessage.error('请稍后再试或重新获取 npsso ')
         break
       default:
+        console.log('aaa')
         ElMessage.error('请求失败')
         break
     }
